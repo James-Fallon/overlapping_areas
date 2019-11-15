@@ -34,7 +34,7 @@ def find_areas_from_file_that_overlap(input_area_coords, file_path):
 
     input_area = convert_coordinates_to_geographic_area(*input_area_coords)
 
-    input_area_in_kilometres = input_area.area / 1000.0
+    input_area_in_kilometres = input_area.area / 1000000.0
     print(f'Total area of input: {input_area_in_kilometres} km^2')
 
     areas_that_overlap = []
